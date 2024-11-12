@@ -12,9 +12,14 @@
 
 6. `create table Dept_Location(Dnumber int,D_Location varchar(50));`
 
-7.  `create table Dependent(ESSN int,Dep_name varchar(30),Gender varchar(5),B_date date,Reltion varchar(30));`
-
+7. `create table Dependent(ESSN int,Dep_name varchar(30),Gender varchar(5),B_date date,Reltion varchar(30));`
 
 ## query
 
 1. `alter table employee alter column ssn type varchar(9);`
+
+2. ` insert into employee values('john','bishmillah','smith','2345678','12-11-2024','pune','male',57267964.23);`
+
+3. ` alter table department add location varchar(150);`
+
+4. ` insert into department values('IT',101,1101,'6-11-2022','pune');`
