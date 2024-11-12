@@ -13,3 +13,8 @@
 6. `create table Dept_Location(Dnumber int,D_Location varchar(50));`
 
 7.  `create table Dependent(ESSN int,Dep_name varchar(30),Gender varchar(5),B_date date,Reltion varchar(30));`
+
+
+## query
+
+1. `alter table employee alter column ssn type varchar(9);`
