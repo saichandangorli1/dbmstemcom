@@ -2,3 +2,4 @@
 2.select name ,father_name from student where father_name like '%es%';
 3.select * from student s left join newLibrary nl on s.rno=nl.rno;
 4.select s.rno, name,father_name from student s inner join newLibrary nl on s.rno=nl.rno;
+5.select distinct student.rno,name,father_name from student inner join newLibrary on student.rno in (select newLibrary.rno from newLibrary group by newLibrary.rno having count(rno)<=1);
