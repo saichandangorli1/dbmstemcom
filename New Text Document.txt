@@ -1,0 +1,4 @@
+1.select * from student s inner join newLibrary nl on s.rno=nl.rno;
+2.select name ,father_name from student where father_name like '%es%';
+3.select * from student s left join newLibrary nl on s.rno=nl.rno;
+4.select s.rno, name,father_name from student s inner join newLibrary nl on s.rno=nl.rno;
