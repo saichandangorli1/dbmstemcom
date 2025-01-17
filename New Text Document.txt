@@ -3,3 +3,10 @@
 3.select * from student s left join newLibrary nl on s.rno=nl.rno;
 4.select s.rno, name,father_name from student s inner join newLibrary nl on s.rno=nl.rno;
 5.select distinct student.rno,name,father_name from student inner join newLibrary on student.rno in (select newLibrary.rno from newLibrary group by newLibrary.rno having count(rno)<=1);
+
+
+TABLE CREATION:
+
+CREATE TABLE newLibrary (rno INT, bookid VARCHAR(10), bookname VARCHAR(50)) AS SELECT * FROM (VALUES (1, 'B1', 'Korth'), (3, 'B2', 'Galvin'), (5, 'B3', 'Nawathe'), (3, 'B1', 'Galvin')) AS t(rno, bookid, bookname);
+
+CREATE TABLE student (rno INT, name VARCHAR(50), father_name VARCHAR(50)) AS SELECT * FROM (VALUES (1, 'Sumit', 'Suresh'), (2, 'Amit', 'Mahesh'), (3, 'Priya', 'Nitesh'), (4, 'Neha', 'Dinesh')) AS t(rno, name, father_name);
