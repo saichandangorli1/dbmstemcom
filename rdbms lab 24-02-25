@@ -1,0 +1,19 @@
+create table branch (
+    bid integer,
+    brname char(30),
+    brcity char(10)
+);
+
+create table customer (
+    cno integer,
+    cname char(20),
+    caddr char(35),
+    city char(20)
+);
+
+create table loan_application (
+    lno integer,
+    lamt_required money,
+    lamt_approved money,
+    l_date date
+);
